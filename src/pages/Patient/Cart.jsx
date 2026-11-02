@@ -638,14 +638,9 @@ export default function Cart() {
           {/* 5. Kartu rincian menu ekstra Hari Ini (berbayar) */}
           {hasEkstraHariIni && (
             <div className="mt-5">
-              <div className="flex items-center justify-between mb-3">
-                <div className="flex items-center gap-2">
-                  <ShoppingBag size={18} className="text-warning-600" />
-                  <h2 className="text-base font-bold text-warning-600">Pesanan Ekstra (Hari Ini)</h2>
-                </div>
-                <span className="text-[11px] font-semibold bg-warning-50 text-warning-700 border border-warning-200 px-2.5 py-0.5 rounded-full">
-                  Penyajian Hari Ini
-                </span>
+              <div className="flex items-center gap-2 mb-3">
+                <ShoppingBag size={18} className="text-warning-600" />
+                <h2 className="text-base font-bold text-warning-600">Pesanan Ekstra (Hari Ini)</h2>
               </div>
               <div className="bg-white rounded-2xl border border-neutral-100 shadow-sm p-4 md:p-5">
                 {['SIANG', 'SORE'].map(key =>
@@ -658,14 +653,9 @@ export default function Cart() {
           {/* 5b. Kartu rincian menu ekstra Besok (berbayar) */}
           {hasEkstraBesok && (
             <div className="mt-5">
-              <div className="flex items-center justify-between mb-3">
-                <div className="flex items-center gap-2">
-                  <ShoppingBag size={18} className="text-warning-600" />
-                  <h2 className="text-base font-bold text-warning-600">Pesanan Ekstra (Besok)</h2>
-                </div>
-                <span className="text-[11px] font-semibold bg-primary-50 text-primary-700 border border-primary-200 px-2.5 py-0.5 rounded-full">
-                  Penyajian Besok
-                </span>
+              <div className="flex items-center gap-2 mb-3">
+                <ShoppingBag size={18} className="text-warning-600" />
+                <h2 className="text-base font-bold text-warning-600">Pesanan Ekstra (Besok)</h2>
               </div>
               <div className="bg-white rounded-2xl border border-neutral-100 shadow-sm p-4 md:p-5">
                 {['SIANG', 'SORE'].map(key =>
